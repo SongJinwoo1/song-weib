@@ -36,6 +36,7 @@
             border: 3px solid var(--primary-purple);
             box-shadow: 0 0 30px var(--primary-purple);
             margin: 20px 0;
+            display: block;
         }
 
         .container {
@@ -48,10 +49,10 @@
             margin-bottom: 50px;
         }
 
-        h1 { color: var(--primary-purple); font-size: 2.5rem; text-shadow: 0 0 10px var(--primary-purple); }
-        h2 { color: var(--primary-purple); border-bottom: 1px solid var(--primary-purple); padding-bottom: 10px; }
+        h1 { color: var(--primary-purple); font-size: 2.5rem; text-shadow: 0 0 10px var(--primary-purple); margin: 10px 0; }
+        h2 { color: var(--primary-purple); border-bottom: 1px solid var(--primary-purple); padding-bottom: 10px; display: flex; align-items: center; gap: 10px; }
 
-        .rules, .how-to {
+        .section-box {
             text-align: right;
             margin: 20px 0;
             line-height: 1.8;
@@ -95,31 +96,30 @@
     <img src="https://i.pinimg.com/736x/8e/0b/40/8e0b404d0f62243d63792c3a504a4347.jpg" alt="Sung Jin Woo" class="hero-img">
 
     <div class="container">
-        <section class="how-to">
+        <section class="section-box">
             <h2>📜 نبذة عن البوت</h2>
-            <p>هذا البوت مستوحى من هيبة "سونغ جين وو"، مصمم ليخدمك في واتساب بمميزات فريدة وسرعة خارقة. البوت متاح مجاناً بالكامل للجميع دون أي رسوم.</p>
+            <p>هذا البوت مستوحى من هيبة "سونغ جين وو"، مصمم ليخدمك في واتساب بمميزات فريدة وسرعة خارقة. البوت متاح <b>مجاناً بالكامل</b> للجميع دون أي رسوم.</p>
         </section>
 
-        <section class="how-to">
+        <section class="section-box">
             <h2>🛠️ كيف يمكنك استخدامه؟</h2>
-            <ul>
-                <li>أضف رقم البوت إلى جهات اتصالك.</li>
-                <li>أرسل كلمة <b>.start</b> لتفعيل القائمة الرئيسية.</li>
-                <li>اتبع التعليمات التي يرسلها البوت لتنفيذ المهام.</li>
+            <ul style="list-style-type: none; padding-right: 0;">
+                <li>📍 أضف رقم البوت إلى جهات اتصالك.</li>
+                <li>💬 أرسل كلمة <b>.start</b> لتفعيل القائمة الرئيسية.</li>
+                <li>⚡ اتبع التعليمات التي يرسلها البوت لتنفيذ المهام.</li>
             </ul>
         </section>
 
-        <section class="rules">
+        <section class="section-box">
             <h2>⚖️ القوانين</h2>
             <p>1. يمنع السبام (إرسال رسائل كثيرة متتالية).</p>
             <p>2. يمنع استخدام البوت في أغراض مسيئة.</p>
             <p>3. البوت للمتعة والفائدة، يرجى استخدامه بوعي.</p>
         </section>
-</body>
-</html>
+
         <div class="buttons-grid">
             <a href="https://wa.me/201055719273" class="btn">🚀 ابدأ المحادثة الآن</a>
-            <a href="#" class="btn">👥 انضم لمجموعة الدعم</a>
+            <a href="https://t.me/your_link" class="btn">👥 انضم لمجموعة الدعم</a>
             <a href="mailto:contact@example.com" class="btn">📧 تواصل مع المطور</a>
         </div>
     </div>
@@ -127,3 +127,6 @@
     <div class="footer">
         تم التطوير بواسطة سيد الظلال © 2026
     </div>
+
+</body>
+</html>
